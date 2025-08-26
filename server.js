@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: "http://localhost:5173", // Frontend URL
+  origin: "https://bb-frontend-b0fd.onrender.com", // Frontend URL
   methods: "GET,POST,PUT,DELETE",
   credentials: true, // If you need cookies or auth headers
 };
