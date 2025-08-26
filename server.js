@@ -13,7 +13,14 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+  origin: "http://localhost:5173", // Frontend URL
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true, // If you need cookies or auth headers
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Routes
